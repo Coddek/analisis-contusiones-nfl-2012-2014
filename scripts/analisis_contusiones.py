@@ -62,5 +62,5 @@ torta = px.pie(
 )
 torta.write_html("visualizations/Torta_resultados.html")
 
-# Mostrar mensaje para confirmar los guardados
+# Mostrar mensaje de confirmacion de guardado
 print("Visualizaciones generadas y guardadas en la carpeta 'visualizations'.")
