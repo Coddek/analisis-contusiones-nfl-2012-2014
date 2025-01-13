@@ -13,13 +13,6 @@ os.makedirs("visualizations", exist_ok=True)
 # Cargar el dataset
 dataset = pd.read_csv("data/Concussion Injuries 2012-2014.csv")
 
-print(dataset.columns)
-print("-----------------------------")
-print(dataset.info())
-print("-----------------------------")
-print(dataset.nunique())
-print("-----------------------------")
-
 # Elegir variables para análisis
 total_contusiones = dataset["Position"].value_counts().reset_index()
 total_contusiones.columns = ["Position", "Count"]
@@ -40,7 +33,8 @@ barra_relacion = px.bar(
     title="Relación entre Posición y Resultado del Equipo",
     labels={"Position": "Posición", "Count": "Número de Ocurrencias", "Winning Team?": "¿Ganó el Equipo?"}
 )
-barra_relacion.write_html("visualizations/Barra_relacion.html")
+barra_relacion.show()
+#barra_relacion.write_image("visualizations/Barra_relacion.png")
 
 # Gráfico: Distribución total de contusiones por posición
 barra = px.bar(
@@ -50,7 +44,8 @@ barra = px.bar(
     title="Distribución de Contusiones por Posición",
     labels={"Count": "Número de Contusiones", "Position": "Posición"}
 )
-barra.write_html("visualizations/Barra_posiciones.html")
+barra.show()
+#barra.write_image("visualizations/Barra_posiciones.png")
 
 # Gráfico: Distribución de resultados de partidos
 torta = px.pie(
@@ -60,7 +55,8 @@ torta = px.pie(
     title="Distribución de Resultados de Partidos",
     labels={"Winning Team?": "¿Ganador del Partido?", "Count": "Cantidad de Partidos"}
 )
-torta.write_html("visualizations/Torta_resultados.html")
+torta.show()
+#torta.write_image("visualizations/Torta_resultados.png")
 
-# Mostrar mensaje de confirmacion de guardado
-print("Visualizaciones generadas y guardadas en la carpeta 'visualizations'.")
+# Mostrar mensaje de confirmación de guardado
+#print("Visualizaciones generadas y guardadas en la carpeta 'visualizations'.")

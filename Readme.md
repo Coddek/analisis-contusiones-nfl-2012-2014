@@ -20,19 +20,19 @@ A continuación se presentan algunas visualizaciones clave que resumen los halla
 
 Este gráfico muestra la relación entre las posiciones de los jugadores y si su equipo ganó o no el partido. Se puede observar cómo diferentes posiciones afectan el rendimiento del equipo.
 
-- [Ver gráfico de relación entre posición y resultado](visualizations/Barra_relacion.html)  
+- [Ver gráfico de relación entre posición y resultado](visualizations/Barra_relacion.png)  
 
 ### 2. Distribución de Contusiones por Posición
 
 Aquí se muestra la distribución total de contusiones sufridas por los jugadores, clasificada por posición. Este gráfico ayuda a entender qué posiciones están más expuestas a las lesiones.
 
-- [Ver gráfico de distribución de contusiones por posición](visualizations/Barra_posiciones.html)  
+- [Ver gráfico de distribución de contusiones por posición](visualizations/Barra_posiciones.png)  
 
 ### 3. Distribución de Resultados de los Partidos
 
 Este gráfico de torta muestra la distribución de los resultados de los partidos, destacando el número de victorias y derrotas de los equipos.
 
-- [Ver gráfico de distribución de resultados de partidos](visualizations/Torta_resultados.html)  
+- [Ver gráfico de distribución de resultados de partidos](visualizations/Torta_resultados.png)  
 
 ## Conclusión
 
